@@ -25,5 +25,6 @@ public class OscilaZ : MonoBehaviour {
         destino = (destino == max) ? min : max;
         StartCoroutine(Move(destino)); 
 	}
-	
+
+
 }
