@@ -6,8 +6,10 @@ public class PranchaMove : MonoBehaviour {
     public float velocidade;
     public float limite;
     public float retorno;
+    public float limite;
+    public float retorno;
 
-	void Start () {
+    void Start () {
 		
 	}
 	
