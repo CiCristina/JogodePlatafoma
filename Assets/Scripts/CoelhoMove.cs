@@ -8,8 +8,6 @@ public class CoelhoMove : MonoBehaviour {
     public float velocidadeh;
     public float min;
     public float max;
-    public float limite;
-    public float retorno;
     public float espera;
 
 
@@ -18,10 +16,10 @@ public class CoelhoMove : MonoBehaviour {
     }
 
     IEnumerator Move(float destino) {
-        while (Mathf.Abs(destino - transform.localPosition.y) > 0.2f) {
+        while (Mathf.Abs(destino - transform.position.y) > 0.3f) {
             Vector3 direcao = (destino == max) ? Vector3.up : Vector3.down;
             Vector3 velocidadeVetorial = direcao * velocidadev;
-            transform.localPosition = transform.localPosition + velocidadeVetorial * Time.deltaTime;
+            transform.position = transform.position + velocidadeVetorial * Time.deltaTime;
             yield return null;
         }
 
@@ -34,6 +32,6 @@ public class CoelhoMove : MonoBehaviour {
     void Update() {
         Vector3 velocidadevetorial = Vector3.left * velocidadeh;
 
-        transform.localPosition = transform.localPosition + velocidadevetorial * Time.deltaTime;
+        transform.position = transform.position + velocidadevetorial * Time.deltaTime;
     }
 }
