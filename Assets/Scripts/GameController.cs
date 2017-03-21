@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
 
+    public Estado estado { get; private set; } 
+
     public float espera;
     public GameObject obstaculo;
     public float tempodeDestruicao;
@@ -24,18 +26,26 @@ public class GameController : MonoBehaviour {
 
     void Start () {
 
-        StartCoroutine(GerarObstaculos());
+        estado = Estado.AguardandoComecar;
 		
 	}
 	
 	IEnumerator GerarObstaculos () {
-        while (true) {
+        while (GameController.instancia.estado == Estado.Jogando) {
             Vector3 pos = new Vector3(14f, Random.Range(7f, 1.0f), 0f);
             GameObject obj = Instantiate(obstaculo, pos, Quaternion.Euler(0f, -90f, 0f)) as GameObject;
             Destroy(obj, tempodeDestruicao);
             yield return new WaitForSeconds(espera);
 
         }
-		
 	}
+
+    public void PlayerComecou() {
+        estado = Estado.Jogando;
+        StartCoroutine(GerarObstaculos());
+    }
+
+    public void PlayerMorreu() {
+        estado = Estado.GameOver;
+    }
 }

@@ -21,14 +21,16 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	void Update () {
-
-        if (Input.GetMouseButtonDown(0)) {
-            anim.Play("Pulando");
-            audiosource.PlayOneShot(somPulo);
-            rb.useGravity = true;
-            pulando = true;
-            
-
+        if (GameController.instancia.estado == Estado.Jogando || GameController.instancia.estado == Estado.AguardandoComecar) {
+            if (Input.GetMouseButtonDown(0)) {
+                anim.Play("Pulando");
+                audiosource.PlayOneShot(somPulo);
+                rb.useGravity = true;
+                pulando = true;
+                if (GameController.instancia.estado == Estado.AguardandoComecar) {
+                    GameController.instancia.PlayerComecou();
+                }
+            }
         }
 	}
 
@@ -38,17 +40,17 @@ public class PlayerController : MonoBehaviour {
             rb.velocity = Vector3.zero;
             rb.AddForce(Vector3.up * ForcaDoPulo, ForceMode.Impulse);
         }
-
     }
 
     void OnCollisionEnter(Collision outro) {
-       if (outro.gameObject.tag == "Obstaculo") {
-            rb.AddForce(new Vector3(-50f, 20f, 0 ), ForceMode.Impulse);
-            rb.detectCollisions = false;
-            anim.Play("Morrendo");
-            audiosource.PlayOneShot(somMorte);
-
+        if (GameController.instancia.estado == Estado.Jogando) {
+            if (outro.gameObject.tag == "Obstaculo") {
+                rb.AddForce(new Vector3(-50f, 20f, 0), ForceMode.Impulse);
+                rb.detectCollisions = false;
+                anim.Play("Morrendo");
+                audiosource.PlayOneShot(somMorte);
+                GameController.instancia.PlayerMorreu();
+            }
         }
     }
-
 }
