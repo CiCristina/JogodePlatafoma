@@ -16,7 +16,7 @@ public class CoelhoMove : MonoBehaviour {
     }
 
     IEnumerator Move(float destino) {
-        while (Mathf.Abs(destino - transform.position.y) > 0.3f) {
+        while (Mathf.Abs(destino - transform.position.y) > 0.5f) {
             Vector3 direcao = (destino == max) ? Vector3.up : Vector3.down;
             Vector3 velocidadeVetorial = direcao * velocidadev;
             transform.position = transform.position + velocidadeVetorial * Time.deltaTime;

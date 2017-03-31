@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: c86251e196474d340ad24daa240b92d0
+timeCreated: 1490792833
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ANTEBRACO DIR
+    100002: ANTEBRACO DIR 1
+    100004: "antebra\xE7o esq"
+    100006: "antebra\xE7o esq 1"
+    100008: Armature
+    100010: Armature.001
+    100012: Bone.008
+    100014: Bone.008 1
+    100016: Bone.008_end
+    100018: Bone.008_end 1
+    100020: "BRA\xC7O DIR"
+    100022: "BRA\xC7O DIR 1"
+    100024: "bra\xE7o esq"
+    100026: "bra\xE7o esq 1"
+    100028: Camera
+    100030: Circle
+    100032: Circle.001
+    100034: Circle.002
+    100036: Circle.002_MeshPart0
+    100038: Circle.002_MeshPart1
+    100040: Circle.003
+    100042: Circle.003_MeshPart0
+    100044: Circle.003_MeshPart1
+    100046: Circle.004
+    100048: controle mao Direita
+    100050: controle mao Direita 1
+    100052: controle mao Direita_end
+    100054: controle mao Direita_end 1
+    100056: controle mao Esquerda
+    100058: controle mao Esquerda 1
+    100060: controle mao Esquerda_end
+    100062: controle mao Esquerda_end 1
+    100064: //RootNode
+    100066: Lamp
+    100068: mao direit
+    100070: mao direit 1
+    100072: mao direit_end
+    100074: mao direit_end 1
+    100076: mao esquerda
+    100078: mao esquerda 1
+    100080: mao esquerda_end
+    100082: mao esquerda_end 1
+    100084: Plane
+    100086: Plane.001
+    400000: ANTEBRACO DIR
+    400002: ANTEBRACO DIR 1
+    400004: "antebra\xE7o esq"
+    400006: "antebra\xE7o esq 1"
+    400008: Armature
+    400010: Armature.001
+    400012: Bone.008
+    400014: Bone.008 1
+    400016: Bone.008_end
+    400018: Bone.008_end 1
+    400020: "BRA\xC7O DIR"
+    400022: "BRA\xC7O DIR 1"
+    400024: "bra\xE7o esq"
+    400026: "bra\xE7o esq 1"
+    400028: Camera
+    400030: Circle
+    400032: Circle.001
+    400034: Circle.002
+    400036: Circle.002_MeshPart0
+    400038: Circle.002_MeshPart1
+    400040: Circle.003
+    400042: Circle.003_MeshPart0
+    400044: Circle.003_MeshPart1
+    400046: Circle.004
+    400048: controle mao Direita
+    400050: controle mao Direita 1
+    400052: controle mao Direita_end
+    400054: controle mao Direita_end 1
+    400056: controle mao Esquerda
+    400058: controle mao Esquerda 1
+    400060: controle mao Esquerda_end
+    400062: controle mao Esquerda_end 1
+    400064: //RootNode
+    400066: Lamp
+    400068: mao direit
+    400070: mao direit 1
+    400072: mao direit_end
+    400074: mao direit_end 1
+    400076: mao esquerda
+    400078: mao esquerda 1
+    400080: mao esquerda_end
+    400082: mao esquerda_end 1
+    400084: Plane
+    400086: Plane.001
+    2300000: Circle.001
+    2300002: Circle.003_MeshPart0
+    2300004: Circle.003_MeshPart1
+    2300006: Circle.004
+    2300008: Plane
+    2300010: Plane.001
+    3300000: Circle.001
+    3300002: Circle.003_MeshPart0
+    3300004: Circle.003_MeshPart1
+    3300006: Circle.004
+    3300008: Plane
+    3300010: Plane.001
+    4300000: Circle.004
+    4300002: Plane
+    4300004: Circle.003_MeshPart0
+    4300006: Circle.003_MeshPart1
+    4300008: Circle.002_MeshPart0
+    4300010: Circle.002_MeshPart1
+    4300012: Circle.001
+    4300014: Circle
+    4300016: Plane.001
+    9500000: //RootNode
+    13700000: Circle
+    13700002: Circle.002_MeshPart0
+    13700004: Circle.002_MeshPart1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

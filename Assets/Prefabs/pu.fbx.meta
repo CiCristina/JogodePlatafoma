@@ -62,7 +62,7 @@ ModelImporter:
     4300020: Sphere.001
     7400000: ocioso
     7400002: pulando
-    7400004: Scene
+    7400004: morrendo
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -146,7 +146,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -186,7 +186,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Scene
+      name: morrendo
       takeName: Scene
       firstFrame: 77
       lastFrame: 85
@@ -196,7 +196,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
