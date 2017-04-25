@@ -11,20 +11,35 @@ public class PlayerController : MonoBehaviour {
     private Animator anim;
     private Rigidbody rb;
     private bool pulando = false;
-    private AudioSource audiosource;
+    private AudioSource audioSource;
+    private Vector3 posicaoInicial;
+    private Quaternion rotacaoInicial;
 
-	void Start () {
 
+    void Start()
+    {
+        posicaoInicial = transform.localPosition;
+        rotacaoInicial = transform.localRotation;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        audiosource = GetComponent<AudioSource>();
-	}
-	
-	void Update () {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public void recomecar()
+    {
+        rb.useGravity = false;
+        rb.velocity = Vector3.zero;
+        rb.detectCollisions = true;
+        transform.localPosition = posicaoInicial;
+        transform.localRotation = rotacaoInicial;
+    }
+
+
+    void Update () {
         if (GameController.instancia.estado == Estado.Jogando || GameController.instancia.estado == Estado.AguardandoComecar) {
             if (Input.GetMouseButtonDown(0)) {
                 anim.Play("Pulando");
-                audiosource.PlayOneShot(somPulo);
+                audioSource.PlayOneShot(somPulo);
                 rb.useGravity = true;
                 pulando = true;
                 if (GameController.instancia.estado == Estado.AguardandoComecar) {
@@ -48,7 +63,7 @@ public class PlayerController : MonoBehaviour {
                 rb.AddForce(new Vector3(-50f, 20f, 0), ForceMode.Impulse);
                 rb.detectCollisions = false;
                 anim.Play("Morrendo");
-                audiosource.PlayOneShot(somMorte);
+                audioSource.PlayOneShot(somMorte);
                 GameController.instancia.PlayerMorreu();
             }
         }
