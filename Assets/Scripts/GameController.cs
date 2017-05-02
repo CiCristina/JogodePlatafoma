@@ -108,7 +108,7 @@ public class GameController : MonoBehaviour
         menuPanel.SetActive(true);
         gameOverPanel.SetActive(false);
         pontosPanel.SetActive(false);
-        GameObject.Find("pu").GetComponent<PlayerController>().recomecar();
+        GameObject.Find("pu").GetComponent<PudimController>().recomecar();
     }
 
 
